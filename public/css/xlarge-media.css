@@ -22,7 +22,7 @@
       padding-right: 10%;
    }
    /* BANNER */
-   .carousel-inner, img{
+   .carousel-inner > img{
       max-height: 700px !important; 
       object-fit: cover; 
    }
