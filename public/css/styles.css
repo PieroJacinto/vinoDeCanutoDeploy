@@ -176,7 +176,8 @@ a {
 }
 .footer-contenedor, a{
     color: black !important;
-    font-size: 12px;    
+    font-size: 12px;
+    
 }
 .footer-contenedor, a div:hover {
     color: white;
@@ -248,27 +249,27 @@ a {
 }
 /* TAMAÑO DE ICONOS SEPARADORES */
 .botella-lateral{
-    width: 30%;
+    width: 25%;
 }
 .botella-medio{
-    width: 40%;
+    width: 35%;
 }
 .corchos{
-    width: 20%;
+    width: 15%;
     transform: scaleY(-1);
 }
 .saca-corchos{
-    width: 40%;
+    width: 35%;
     transform: scaleY(-1);
 }
 .copas-lateral {
-    width: 30%;
+    width: 25%;
 }
 .copas-medio {
-    width: 40%;
+    width: 35%;
 }
 .damajuana{
-    width: 26%;
+    width: 21%;
 }
 /* CATEGORIAS HOME */
 .categorias-flex{
