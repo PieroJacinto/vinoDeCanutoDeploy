@@ -248,27 +248,27 @@ a {
 }
 /* TAMAÑO DE ICONOS SEPARADORES */
 .botella-lateral{
-    width: 25%;
+    width: 30%;
 }
 .botella-medio{
-    width: 35%;
+    width: 40%;
 }
 .corchos{
-    width: 15%;
+    width: 20%;
     transform: scaleY(-1);
 }
 .saca-corchos{
-    width: 35%;
+    width: 40%;
     transform: scaleY(-1);
 }
 .copas-lateral {
-    width: 25%;
+    width: 30%;
 }
 .copas-medio {
-    width: 35%;
+    width: 40%;
 }
 .damajuana{
-    width: 21%;
+    width: 26%;
 }
 /* CATEGORIAS HOME */
 .categorias-flex{
