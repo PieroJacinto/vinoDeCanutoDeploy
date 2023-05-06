@@ -176,8 +176,7 @@ a {
 }
 .footer-contenedor, a{
     color: black !important;
-    font-size: 12px;
-    transition: all .3s ease-in;
+    font-size: 12px;    
 }
 .footer-contenedor, a div:hover {
     color: white;
