@@ -202,7 +202,7 @@ a {
     margin: 0px !important;
 }
 .carousel-inner, img{
-    max-height: 700px !important; 
+    max-height: 250px !important; 
     object-fit: cover; 
 }
 .viñedo{

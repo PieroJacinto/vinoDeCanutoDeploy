@@ -45,6 +45,10 @@
   .carousel-caption > h5 {
       font-size:140% !important;
   }
+  .carousel-inner, img{
+   max-height: 500px !important; 
+   object-fit: cover; 
+}
 
    /* FOOTER */
    .footer-contenedor{
