@@ -201,7 +201,7 @@ a {
 .banner-pad {
     margin: 0px !important;
 }
-.carousel-inner > img{
+.carousel-inner > div > img{
     max-height: 200px !important; 
     object-fit: cover; 
 }
