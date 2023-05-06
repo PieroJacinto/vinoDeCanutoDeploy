@@ -1,0 +1,73 @@
+@media (min-width: 992px) { 
+   .home-pad{
+      padding: 0px 8%;
+   }
+  .categ-pad{
+   padding: 0px 6%;
+   }
+    /* HEADER */    
+  
+   .logo{        
+      padding-left: 8%;
+   }
+   .icon-pad{
+      padding-right: 8%;
+   }
+   .navbar > li > a  {  
+     padding: 0px 1rem;   
+   }
+     /* BANNER */
+     .carousel-caption {        
+      font-size: 160% !important;
+      
+   }
+  .carousel-caption > h5 {
+      font-size:160% !important;
+  }
+   /* TAMAÑO DE ICONOS SEPARADORES */
+   .botella-lateral{
+      width: 20%;
+   }
+   .botella-medio{
+      width: 30%;
+   }
+   .corchos{
+      width: 20%;
+      transform: scaleY(-1);
+   }
+   .saca-corchos{
+      width: 30%;
+      transform: scaleY(-1);
+   }
+   .copas-lateral {
+      width: 20%;
+   }
+   .copas-medio {
+      width: 30%;
+   }
+   .damajuana{
+      width: 16%;
+   }
+   /* padding cards categorias */
+   .categorias-flex .cat-item{
+   padding: 2%;
+   }
+   /* NOMBRE CATEGORIA */
+   .cat-name {
+      font-size: 1.5vw !important;   
+   }
+    /* CATEGORIAS HOVER  */
+    .cat-name{
+      width: 88%;
+   }
+   /* instagram galery*/
+   .image{
+      min-width: 20%;  
+      position: relative;
+      aspect-ratio: 3/4;
+  }
+/* LISTA DE PRODUCTOS SEGUN CATEGORIA */
+.section-filter-prod {
+   grid-template-columns: 1fr 3fr;
+}
+ }

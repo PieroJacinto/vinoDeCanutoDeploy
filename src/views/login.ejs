@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head') %> 
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="main-pad">
+        <%- include('./partials/header') %>
+    </header>
+    <!-- MAIN -->
+    <main>  
+        <div id="page" class="site">
+            <div class="container-login">
+                <div class="wrapper">
+                    <div class="login">
+                        <div class="content-heading">                           
+                            <div class="y-style">                                
+                                <div class="welcome">
+                                     <a href="">
+                                        Vino de Canuto
+                                    </a>                                    
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content-form">
+                            <div class="y-style">
+                                <form action="/login" method="POST" class="login-sign-form" id="formulario" novalidate>
+                                    <p>
+                                        <label>Email</label>
+                                        <input type="email" name="email" placeholder="Ingresá tu email">
+                                        <span class="error"></span>                                        
+                                    </p>
+                                    <p>
+                                        <label>Contraseña</label>
+                                        <input type="password" name="password" placeholder="Ingresá tu contraseña">    
+                                        <span class="error"></span>                                    
+                                    </p>
+                                    <p class="check">
+                                        <input type="checkbox" id="remember">                                        
+                                        <label for="remember">Recuerdame</label>
+                                    </p>
+                                    <p class="forgot"><a href="">Olvidaste tu contraseña?</a></p>
+                                    <p><button type="submit">Ingresa</button></p>
+                                </form>
+                                <div class="afterform">
+                                    <p>No tienes una cuenta?</p>
+                                    <a href="/register" class="t-signup">Registrate</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer-contenedor">
+        <%- include('./partials/footer') %> 
+    </footer>  
+    <!-- HAMBURGUER JS SCRIPT  -->
+    <script src="js/hamburguer.js"></script>
+    <!-- VALIDATIONS SCRIPT -->
+    <script src="js/validaciones/login.js"></script>
+    <!-- BOOTSTRAP ENDING LINE -->
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+        crossorigin="anonymous">
+    </script>    
+</body>
+</html>

@@ -1,0 +1,44 @@
+/* FLEX */
+
+.flex {
+    display: flex;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.flex-column{
+    flex-direction: column;
+}
+
+/* TEXT */
+.text-center{
+    text-align: center;
+}
+.bold {
+    font-weight: bold;
+}
+
+/* PADDING */
+.pad-right{
+    padding-right: 3%;
+}
+
+.pad-categ-card{
+    padding-right: 5%;
+}
+/* MARGIN */
+.mrg-t-1{
+    margin-top: 3%;
+}
+.mrg-rg-1 {
+    margin-right: 1rem;
+}
+.mrg-bt-1{
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,28 @@
+@media (min-width: 1400px) {
+   .home-pad{
+      padding: 0px 8%;
+   }
+   .categ-pad{
+      padding: 0px 10%;
+   }
+    /* HEADER */
+    .navbar > li > a  {      
+        font-size: .8vw;    
+   }
+   .nav-li-pad {
+      margin-left: 3rem;
+  }
+   .nav-li{
+      margin-left:3.5rem;
+  }
+   .logo{        
+      padding-left: 8%;
+   }
+   .icon-pad{
+      padding-right: 8%;
+   } 
+   /* DETALLE PRODUCTO */
+   .detalle-right{    
+      width: 60%;  
+   }
+}

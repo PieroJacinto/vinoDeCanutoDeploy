@@ -1,0 +1,64 @@
+<!-- creo contenedor pricipal -->
+<div class="flex align-items-center justify-content-between violeta">
+    <!-- creo contenedor para hamburguer en mobile, izquierda del header-->
+    <div class="display-drop-none">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
+                <div class="menu-btn hamb-disp">
+                    <div class="menu-btn__burguer hamb-pad"></div>
+                </div>                 
+            </button>                   
+            <div>
+                <ul class="dropdown-menu me-auto" aria-labelledby="dropdownMenuButton1">
+                    <li class="nav-hov"><a class="dropdown-item mrg-t-1" href="/listaProductos">Vinos</a></li>
+                    <hr class=" ">
+                    <li><a class="dropdown-item" href="/listaProductos">Espumantes</a></li>
+                    <hr >
+                    <li><a class="dropdown-item" href="/listaProductos">Vermouths</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="/listaProductos">Ofertas</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="/listaProductos">Destacados</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="images/carta/cartaCanuto.pdf" target="_blank" rel="noopener noreferrer">Carta</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="#">Contacto</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="#">Nosotros</a></li>
+                    <hr> 
+                </ul>
+            </div>  
+        </div>  
+    </div>
+    
+
+    <!-- contenedor para el logo en mobile, centro del header -->
+    <div class="text-center logo">
+        <a href="/">
+            <img src="images/logos/logo2.png" alt="" class="header-logo">
+        </a>
+    </div>
+
+    <!-- contenedor para el nav en medium media para arriba -->
+    <nav class="navbar"> 
+        <ul class="navbar">
+            <li><a href="/listaProductos" class="">Vinos</a></li>
+            <li><a href="/listaProductos" class="nav-li-pad">Espumantes</a></li>
+            <li><a href="/listaProductos" class="nav-li-pad">Vermouths</a></li>
+            <li><a href="/listaProductos" class="nav-li-pad">Ofertas</a></li>
+            <li><a href="/listaProductos" class="nav-li-pad">Destacados</a></li>
+            <li><a href="images/carta/cartaCanuto.pdf" target="_blank" rel="noopener noreferrer" class="nav-li-pad">Carta</a></li>
+            <li><a href="#" class="nav-li-pad">Contacto</a></li>
+            <li><a href="#" class="nav-li-pad">Nosotros</a></li>
+        </ul>
+    </nav>
+    <!-- contenedor para el carrito de compra y login, derecha del header -->
+    <div class="flex align-items-center icon-pad">
+        <a href="/login">
+            <i class="fa-regular fa-circle-user header-icons pad-right"></i>
+        </a>
+        <a href="">
+            <i class="fa-solid fa-cart-shopping header-icons"></i>
+        </a>
+    </div>
+</div>  

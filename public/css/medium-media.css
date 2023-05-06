@@ -1,0 +1,118 @@
+@media (min-width: 768px) {
+   .home-pad{
+      padding: 0px 6%;
+  }
+  .categ-pad{
+   padding: 0px 3%;
+   }
+      /* HEADER */
+   .hamb-disp{
+      display: none;
+   }
+   .logo{
+      order: -1;
+      padding-left: 6%;
+   }
+   .icon-pad{
+      padding-right: 6%;
+   }
+   /* SACAMOS EL DROPDOWN */
+   .display-drop-none{
+      display: none !important;
+   }
+   
+   /* mostramos el navbar */
+   .navbar{
+      display: flex !important;
+      flex-direction: row;
+      margin: 0px !important;
+   }
+   .navbar > li > a  {    
+      text-decoration:none !important;
+      color: white !important;    
+      font-size: 1.3vw; 
+      text-align: center;
+      padding: 0px 0.75rem;   
+   }
+   .navbar > li {
+      list-style: none !important;    
+   }
+   /* BANNER */
+   .carousel-caption {        
+      font-size: 140% !important;
+      
+   }
+  .carousel-caption > h5 {
+      font-size:140% !important;
+  }
+
+   /* FOOTER */
+   .footer-contenedor{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 1rem 8%; 
+   }
+   .footer-about,
+   .footer-contacto,
+   .footer-redes {
+      margin-bottom: 0px;
+   }
+     
+   /* CATEGORIAS HOME */
+   .cat-item{
+   width: 33.3%;
+   }
+   /* SEPARADORES */
+   .titulo-separador{   
+   margin-top: 3rem;
+   }
+   /* CATEGORIAS */
+   /* NOMBRE CATEGORIA */
+   .cat-name{
+      width: 83%;
+      font-size: 1.5vh !important; 
+   }
+    /* Intagram gallery */
+    .image{
+      min-width: 33.3%;  
+      position: relative;
+      aspect-ratio: 3/4;
+   }
+  
+   /* GRID LISTA DE PRODUCTOS POR CATEGORIA */
+   .tarjetas{
+      margin-top: 1rem;
+   }
+   /* GRID DETALLE DE PRODUCTOS */
+   .detalle-prod-grid{
+      margin-top: 3rem;
+      grid-template-columns: 2fr 2FR;
+   }
+   /* login */
+   .wrapper>div{
+      flex-direction: row;
+      max-width: 800px;
+   }
+   .signup .content-heading .y-syle {
+      height: 100%;
+      justify-content: space-between;
+   }
+   .content-heading{    
+      border-top-left-radius: 7px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 7px;      
+      margin: 0px;
+   }
+   .content-form{  
+      border-bottom: #6B3454 solid 2px;  
+      border-right:  solid 2px #6B3454;
+      border-left:  none;
+      border-top: solid 2px #6B3454;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 7px;   
+      border-top-right-radius: 7px; 
+      margin: 0px;
+   }
+  
+}

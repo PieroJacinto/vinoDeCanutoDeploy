@@ -1,0 +1,117 @@
+<form class="" action="productosFiltrados" method="POST" enctype="form-data" id="form-filtros">
+    <h5 class="filtro-titulo">Filtros</h5> 
+    <hr>       
+    <h5 class="filtro-subtitulo">Precio</h5>                
+    <!-- FILTROS DE PRECIO -->
+    <div class="price-input">
+      <div class="field price-mg d-flex">                           
+        <input name="precioMinimo" type="number" class="input-min" value="2500">
+      </div>                          
+      <div class="field">                            
+        <input name="precioMaximo" type="number" class="input-max" value="7500">
+      </div>
+    </div>
+    <div class="slider">
+      <div class="progress"></div>
+    </div>
+    <div class="range-input">
+      <input type="range" class="range-min" min="0" max="30000" value="7500" step="100">
+      <input type="range" class="range-max" min="0" max="30000" value="22500" step="100">
+    </div> 
+
+    <!-- FILTROS DE CATEGORIA -->
+    <hr style="margin-top: 1.75rem;">
+    <h5 class="filtro-subtitulo">Categoria</h5>                        
+    <div class="form-check">
+        <input name="Categoria" class="form-check-input" type="checkbox" value="Vinos" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            Vinos
+        </label>
+    </div>
+    <div class="form-check">
+        <input name="Categoria" class="form-check-input" type="checkbox" value="Espumantes" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            Espumantes
+        </label>
+    </div>
+    <div class="form-check">
+        <input name="Categoria" class="form-check-input" type="checkbox" value="Vermouth" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            Vermouth
+        </label>
+    </div>
+    <div class="form-check">
+        <input name="Categoria" class="form-check-input" type="checkbox" value="Destacados" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            Destacados
+        </label>
+    </div>
+    <div class="form-check">
+        <input name="Categoria" class="form-check-input" type="checkbox" value="Ofertas" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            Ofertas
+        </label>
+    </div>                         
+   
+    <!-- FILTROS DE VARIETAL -->
+    <hr style="margin-top: 1.75rem;">
+    <h5 class="filtro-subtitulo">Varietal</h5>
+    <div class="form-check">
+        <input name="Varietal" class="form-check-input" type="checkbox" value="Malbec" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            Malbec
+        </label>
+    </div>
+    <div class="form-check">
+        <input name="Varietal" class="form-check-input" type="checkbox" value="CabernetSauvignon" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            Cabernet Sauvignon  
+        </label>
+    </div>
+    <div class="form-check">
+        <input name="Varietal" class="form-check-input" type="checkbox" value="CabernetFranc" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            Cabernet Franc
+        </label>
+    </div>
+    <div class="form-check">
+        <input name="Varietal" class="form-check-input" type="checkbox" value="PinotNoir" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            Pinot Noir
+        </label>
+    </div>
+    <div class="form-check">
+        <input name="Varietal" class="form-check-input" type="checkbox" value="Bonarda" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            Bonarda
+        </label>
+    </div>
+    <div class="form-check">
+        <input name="Varietal" class="form-check-input" type="checkbox" value="Chardonnay" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            Chardonnay
+        </label>
+    </div>
+    <div class="form-check">
+        <input name="Varietal" class="form-check-input" type="checkbox" value="Syrah" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            Syrah
+        </label>
+    </div>
+    <div class="form-check">
+        <input name="Varietal" class="form-check-input" type="checkbox" value="SauvignonBlanc" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            Sauvignon Blanc
+        </label>
+    </div>
+    <div class="form-check">
+        <input name="Varietal" class="form-check-input" type="checkbox" value="PetitVerdot" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            Petit Verdot
+        </label>
+    </div>
+    <!-- BOTON PARA ENVIAR EL FORMULARIO -->
+    <div class="mt-4 mb-4 d-flex justify-content-center">
+        <button class="boton-filtros" type="submit"> Aplicar filtos </button>
+    </div>                                                     
+</form>
