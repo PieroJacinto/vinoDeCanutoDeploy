@@ -22,7 +22,7 @@
                 <% productosCategoria.forEach(producto => { %>                 
                     <div class="tarjeta">
                         <a href="/detalleProducto/<%= producto.id %>">
-                            <img src="../images/vinos/<%= producto.imagen %>" alt="" srcset="" class="tarjeta-imagen">
+                            <img src="../images/vinos/<%= producto.imagen %>" alt="" srcset="" class="tarjeta-imagen">                            
                             <div class="contenido-tarjeta">
                                 <p><%= producto.nombre %></p>
                                 <% if (producto.descuento > 0) { %>
@@ -31,7 +31,9 @@
                                         <p class="precio-oferta mrg-rg-1">$<%= producto.precio %></p>
                                         <p id="precio-con-descuento"> $<%= Math. round(producto.precio - ((producto.precio * producto.descuento) / 100)) %></p>
                                     </div>                                    
-                                <% } %>
+                                <% } else { %>
+                                    <p>$<%= producto.precio %></p>
+                                    <% } %>
                             </div>
                             <div class="boton-tarjeta">Agregar</div>
                         </a>

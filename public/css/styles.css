@@ -513,6 +513,10 @@ a {
 }
 .precio-oferta {
     text-decoration: line-through;
+    font-weight: 300 !important;
+}
+#precio-con-descuento{
+    font-weight: 600;
 }
 .descuento{
     color: #db4437;

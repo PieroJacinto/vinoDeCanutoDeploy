@@ -2,21 +2,29 @@
     <div class="row ">
         <div class="owl-carousel owl-theme ">
             <% if (productos.length > 0) { %>
-                <% productos.forEach(element => { %>
+                <% productos.forEach(producto => { %>
                     <div class="item">                       
                         <div>
-                            <a href="/detalleProducto/<%= element.id %>">
-                                <img src="images/vinos/<%= element.imagen %>" alt="" srcset="" class="tarjeta-imagen">
+                            <a href="/detalleProducto/<%= producto.id %>">
+                                <img src="images/vinos/<%= producto.imagen %>" alt="" srcset="" class="tarjeta-imagen">
                             </a>
                         </div>
                         <div class="contenido-tarjeta">                                
-                            <a href="/detalleProducto/<%= element.id %>">
-                                <p><%= element.nombre %></p>
-                                <p>$<%= element.precio %></p>
+                            <a href="/detalleProducto/<%= producto.id %>">
+                                <p><%= producto.nombre %></p>
+                                <% if (producto.descuento > 0) { %>
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <div class="descuento  mrg-rg-1"> %<%= producto.descuento %> Off</div>
+                                        <p class="precio-oferta mrg-rg-1">$<%= producto.precio %></p>
+                                        <p id="precio-con-descuento"> $<%= Math. round(producto.precio - ((producto.precio * producto.descuento) / 100)) %></p>
+                                    </div>                                    
+                                <% } else { %>
+                                    <p>$<%= producto.precio %></p>
+                                    <% } %>
                             </a>
                         </div>
                         <div class="boton-tarjeta">
-                            <a href="/detalleProducto/<%= element.id %>">
+                            <a href="/detalleProducto/<%= producto.id %>">
                                 ver producto
                             </a>
                         </div>                              
