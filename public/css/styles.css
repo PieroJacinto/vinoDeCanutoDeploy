@@ -511,10 +511,19 @@ a {
     margin-bottom: 5px;
     margin-top: 5px;
 }
+.precio-oferta {
+    text-decoration: line-through;
+}
+.descuento{
+    color: #db4437;
+    font-size: 16px;
+    
+}
 /* tarjetas de lista de productos */
-.contenido-tarjeta > p {
+.contenido-tarjeta p {
     margin-bottom: 0;
     color: black;
+    font-size: 14px;
 }
 .contenido-tarjeta > p:last-of-type {
     font-weight: bold;   
@@ -522,10 +531,17 @@ a {
 /* tarjetas del home */
 .contenido-tarjeta > a > p {
     margin-bottom: 0;
-    color: black;
+    color: black;    
 }
 .contenido-tarjeta > a > p:last-of-type {
     font-weight: bold;
+}
+.contenido-tarjeta .descuento:hover{
+    color: #c00515;   
+}
+.precio-oferta{
+    font-size: 14px;
+    font-weight: 600;
 }
 /* ---------------- */
 .boton-tarjeta{
