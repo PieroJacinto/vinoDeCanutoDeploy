@@ -477,6 +477,7 @@ a {
 .tarjetas{   
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(225px, 1fr));
+    grid-template-rows: repeat(auto-fill,minmax(400px, 1fr));
     gap: 1rem;
     border-radius: 5px;
 }

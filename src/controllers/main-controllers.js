@@ -30,7 +30,17 @@ module.exports = {
     res.render("home", { instaData, productos });
   },
   listaProductos: async (req, res) => {
-    res.render("lista-productos")
+    const productos = index()
+    const categoria = req.params.categoria
+    if (categoria == "ofertas") {
+      var productosCategoria = productos.filter(item => item.descuento > 0)
+    } else if(categoria == "destacados") {
+      var productosCategoria = productos.filter(item => item.destacados == true)
+    } else {
+      var productosCategoria = productos.filter(item => item.categoria == categoria)
+    }
+    ;
+    res.render("lista-productos",{productosCategoria,categoria})
   },
   detalleProducto: async (req,res) => {
     const idBuscado = req.params.id
