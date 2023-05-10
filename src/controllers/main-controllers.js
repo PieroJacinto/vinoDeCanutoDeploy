@@ -1,5 +1,7 @@
 // REQUERIMOS NODE-FETCH PARA HACER PETICION A API
 const fetch = require("node-fetch");
+//requerimo base de datos json
+const {index,one} = require('../models/producto.model');
 
 //CREAMOS VARIABLE DE TOKEN QUE ESTA ALMACENADO EN VARIABLE DE ENTORNO Y URL DE LA PETICION PARA API DE INSTAGRAM
 const token = process.env.IG_ACCESS_TOKEN;
@@ -9,6 +11,9 @@ const url = `https://graph.instagram.com/me/media?fields=thumbnail_url,media_url
 // ADENTRO DEL MODULE.EXPORTS CREAMOS TODOS LOS CONTROLADORES QUE CONTROLARAN CADA RUTA
 module.exports = {
   home: async (req, res) => {
+    // creamos variable con los productos para enviarlos a la vista
+    const productos = index();
+    // creamos variable instadata a la que luego asignaremos valor
     let instaData;
     //TRY CATCH PARA MOSTRAR ERROR SI LOS HAY EN EL FETCH DE INSTAGRAM API
     try {
@@ -20,11 +25,9 @@ module.exports = {
       console.log("Error en el servicio de Instagram: " + error);
         //si instadata es null se renderiza la vista "instagram-fetch-error" como lo establece el if ternario en el ejs del home
       instaData = null;
-    }  
-    
-
+    }     
     // RENDERIZAMOS LA VISTA HOME Y LE PASAMOS OBJETO CON LA INFO NECESARIA
-    res.render("home", { instaData });
+    res.render("home", { instaData, productos });
   },
   listaProductos: async (req, res) => {
     res.render("lista-productos")

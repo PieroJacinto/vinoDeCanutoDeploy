@@ -1,0 +1,189 @@
+[
+    {
+        "id":1,
+        "nombre": "Amici Miei Blend",
+        "bodega": "Stella Crinita",
+        "varietal":"Blend",
+        "variedad": "tinto",
+        "categoria": "vinos",
+        "precio": "3000",
+        "Descripcion": "Vino de intensidad de color rojo potente, con aromas a frutas rojas del bosque, moras, grosellas y casis con notas terrosos y herbáceas y taninos presentes que acompañan una acidez destacada. Uvas cosechadas a mano, provenientes de viñedos certificados orgánicos y biodinámicos.",
+        "imagen": "amici miei.png"
+    },
+    {
+        "id":2,
+        "nombre": "Jardin Enchante Rosado",
+        "bodega": "Ernesto Catena",
+        "varietal":"Malbec",
+        "variedad": "rosado",
+        "categoria": "vinos",
+        "precio": "2500",
+        "Descripcion": "Un luminoso rosa pálido con reflejos cobrizos seduce la vista. En nariz se destacan notas florales como a jazmín, rosas y a fresas que crecen en nuestra finca en Vista Flores. De vibrante acidez con textura sedosa y aromas delicados a frutillas y frambuesas. Sabroso, vivaz y persistente en boca.",
+        "imagen": "jardin enchante rosado.png"
+    },
+    {
+        "id":3,
+        "nombre": "Stela Crinita Cabernet Franc",
+        "bodega": "Stella Crinita",
+        "varietal":"Cabernet Franc",
+        "variedad": "tinto",
+        "categoria": "vinos",
+        "precio": "3200",
+        "Descripcion": "Presenta un color rojo granate de capa alta. La nariz es intensa en frutos rojos maduros, flores frescas como la rosa y el geranio y una sutil nota de vainilla que nos muestra un pequeño paso por barrica y le brinda una pequeña complejidad aromática.",
+        "imagen": "STELLA_CRINITA_FRANC.png"
+    },    
+    {
+        "id": 4,
+        "nombre": "Tatu Cabernet Sauvignon",
+        "bodega": "Stella Crinita",
+        "varietal": "Cabernet Sauvignon",
+        "variedad": "Rosado",
+        "categoria": "vinos",   
+        "precio": 2000,
+        "Descripcion": "Tatú Cabernet Sauvignon 2020 es un CS 100%, criado durante ocho meses 75% en ánforas de cemento y 25% en barricas grandes de 500 litros roble francés de 6º uso. ",
+        "imagen": "tatu2.png"
+    },
+    {
+        "id": 5,
+        "nombre": "Alma Negra Rosé Espumante",
+        "bodega": "Ernesto Catena",
+        "varietal": "Pinot Noir",
+        "variedad": "Rosado",
+        "categoria": "espumantes",   
+        "precio": 2700,
+        "Descripcion": "Miles de burbujas afinadas como una orquesta eterna muestran de cerca la acidez propia de este espumante. Un canto a la fermentación y al terruño, desde su color hasta su aroma. Un balance perfecto para la vista, la nariz y la boca. Un péndulo entre cielos y pieles naranjas, aromas a frutos secos y fresas. Una despedida liviana, destellante y continua. Una nota musical que nunca termina de apagarse.",
+        "imagen": "alma negra rose espumante.png"
+    },
+    {
+        "id": 6,
+        "nombre": "Alma Negra Blend Tinto",
+        "bodega": "Ernesto Catena",
+        "varietal": "Blend",
+        "variedad": "tinto",
+        "categoria": "vinos",   
+        "precio": 2000,
+        "Descripcion": "Una puerta abierta a los bosques de frutas rojas. Un pasadizo mágico sobre colchones de cerezas, moras y registros ahumados que flotan en el aire. Un vino con cuerpo y alma, de color intenso y eléctrica compañía. En boca maravillosos destellos de madera y un final herbáceo y memorable. Una fotografía inquietante e indestructible de todo lo que está bien en un vino.",
+        "imagen": "alma negra tinto.png"
+    },
+    {
+        "id": 7,
+        "nombre": "Mara Pinot Noir",
+        "bodega": "Ernesto Catena",
+        "varietal": "Pinot Noir",
+        "variedad": "tinto",
+        "categoria": "vinos",   
+        "precio": 2000,
+        "Descripcion": "Una huella de identidad plasmada en las alturas argentinas. Rojo carmín, una uva tinta proveniente del frío que marca el pulso de los vinos de altura. Mara es libertad y salvajismo. Balanceado entre estructura y fluidez. En nariz se recuerda a cereza fresca acompañada de especias y un final terroso.",
+        "imagen": "mara pinot.png"
+    },
+    {
+        "id": 8,
+        "nombre": "DV Catena Chardonnay",
+        "bodega": "Catena Zapata",
+        "varietal": "Chardonnay",
+        "variedad": "Blanco",
+        "categoria": "vinos",   
+        "precio": 3400,
+        "Descripcion": "DV Catena Chardonnay refleja características propias de las zonas que le dan origen. Con días soleados y cálidos, y noches frescas, las uvas de Chardonnay adquieren una madurez plena y bien balanceada. Su color es amarillo intenso con reflejos verdosos claros. De gran complejidad y elegancia, en nariz se presenta concentrado e intenso, el viñedo La Pirámide aporta aromas de frutas tropicales maduras, ananá y durazno blanco . El viñedo Domingo aporta aromas cítricos y minerales. En boca, de impacto dulce y untuoso , con sabores a frutas maduras y muy buena acidez que le brinda un fresco y prolongado final.",
+        "imagen": "catena chardonay.png"
+    },
+    {
+        "id": 9,
+        "nombre": "Tikal Jubilo Blend",
+        "bodega": "Ernesto Catena",
+        "varietal": "Blend",
+        "variedad": "tinto",
+        "categoria": "vinos",   
+        "precio": 8000,
+        "Descripcion": "Un elegante y refinado tinto, que ofrece generosos sabores de ciruelas negras, cerezas asadas y tarta de moras, con una exuberante y profusa textura. Intensas notas de chocolate y frambuesas se prolongan sobre el final.",
+        "imagen": "tikal jubilo2.png"
+    },
+    {
+        "id": 10,
+        "nombre": "Tikal Amorio Malbec",
+        "bodega": "Ernesto Catena",
+        "varietal": "Malbec",
+        "variedad": "tinto",
+        "categoria": "vinos",   
+        "precio": 7800,
+        "Descripcion": "",
+        "imagen": "tikal amorio.png"
+    },
+    {
+        "id": 11,
+        "nombre": "Condeminal Malbec",
+        "bodega": "Atamisque",
+        "varietal": "Malbec",
+        "variedad": "tinto",
+        "categoria": "vinos",   
+        "precio": 6700,
+        "Descripcion": "A la vista, color rojo con reflejos vioáceos. En nariz, aroma de violetas y frutos rojos. En Boca balanceado de buen cuerpo y taninos dulces",
+        "imagen": "condeminal malbec.png"
+    },
+    {
+        "id": 12,
+        "nombre": "Hippie Love Criolla tinto",
+        "bodega": "Ernesto Catena",
+        "varietal": "Criolla",
+        "variedad": "tinto",
+        "categoria": "vinos",   
+        "precio": 6700,
+        "Descripcion": "Fácil de beber, sin vueltas. 500 ml. 100% Criolla. Se puede disfrutar de su fruta y especias en final medio. Un vino tinto fresco y alegre. “Es trabajo, diversión y amistad, todo metido en esta botella, para que vos, fan del vino y de los buenos momentos,  lo lleves bajo el brazo en una aventura de destino incierto”.",
+        "imagen": "hippie-love.png"
+    },
+    {
+        "id": 13,
+        "nombre": "El Retiro Bonarda",
+        "bodega": "Finca Buena Vista",
+        "varietal": "Bonarda",
+        "variedad": "tinto",
+        "categoria": "vinos",   
+        "precio": 4700,
+        "Descripcion": "Rojo con atractivos tonos violáceos. Aromas con marcada personalidad donde se destacan grosellas, frambuesas y ciruelas maduras, acompañadas por notas de tabaco, vainilla y frutos secos gracias a su crianza durante 6 meses en barricas de roble francés de primer uso. En boca presenta una entrada amplia, con taninos dulces y maduros, de estructura media, con acidez equilibrada, retrogusto elegante y largo final.",
+        "imagen": "el reitro2.png"
+    },
+    {
+        "id": 14,
+        "nombre": "Maleante Malbec",
+        "bodega": "Maleante",
+        "varietal": "Malbec",
+        "variedad": "tinto",
+        "categoria": "vinos",   
+        "precio": 900,
+        "Descripcion": "Doble selección de racimos y granos, fermentación a 24º-28 C. en vasijas de 100-150 hl.; maceración extendida durante 30-45 días en función de la degustación y fermentación maloláctica natural. Ideal para acompañar carnes rojas o platos con salsas especiadas",
+        "imagen": "maleante.png"
+    },
+    {
+        "id": 15,
+        "nombre": "Nicasia Blanc de Blanc",
+        "bodega": "Catena Zapata",
+        "varietal": "Blend",
+        "variedad": "blanco",
+        "categoria": "vinos",   
+        "precio": 2800,
+        "Descripcion": "Se perciben en este vino deliciosos sabores a frutos blancos y de durazno aportados por el Viognier, junto a delicadas notas florales típicas de la variedad Gewürztraminer y frescos dejos cítricos propios del Sauvignon Blanc. El paso por roble incrementa aún más la complejidad de este vino, otorgando sutiles notas de miel. Un vino elegante, complejo y de balanceada acidez, ideal para servir con carnes blancas, mariscos y pescados elaborados.",
+        "imagen": "nicasia blanc de blanc.png"
+    },
+    {
+        "id": 16,
+        "nombre": "Gran Siesta Blend 3ltrs",
+        "bodega": "Ernesto Catena",
+        "varietal": "Blend",
+        "variedad": "tinto",
+        "categoria": "vinos",   
+        "precio": 27800,
+        "Descripcion": "Color rojo rubí profundo. En nariz, es muy expresivo e intenso. Las frutillas, cerezas y membrillos son los aromas frutales que más se destacan, fundiéndose con notas de vainilla, madera tostada y sutiles notas a especias. Su boca es plena, de taninos muy agradables, y suaves. Tiene un medio de boca consistente, frutal y con algunas notas minerales. De cuerpo elegante y buena estructura, termina con un persistente y largo final de boca.",
+        "imagen": "siesta.png"
+    },
+    {
+        "id": 17,
+        "nombre": "Traslapiedra Malbec",
+        "bodega": "Traslapiedra",
+        "varietal": "Malbec",
+        "variedad": "tinto",
+        "categoria": "vinos",   
+        "precio": 2800,
+        "Descripcion": "Traslapiedra Malbec es un vino jóven, sin paso por madera, cuyas uvas provienen de pequeñas fincas ubicadas en los suelos pedregosos de Paraje Altamira. En boca es fresco, fácil de tomar, con buena textura y presencia de fruta roja y de hierbas representativas del lugar.",
+        "imagen": "traslapiedra.png"
+    }
+]
