@@ -33,7 +33,11 @@ module.exports = {
     res.render("lista-productos")
   },
   detalleProducto: async (req,res) => {
-    res.render("detalle-producto")
+    const idBuscado = req.params.id
+    const productos = index()
+    const productofiltrado = productos.filter(item => item.id == idBuscado) 
+    const producto = productofiltrado[0]     
+    res.render("detalle-producto", {producto})
   },
   login: async (req,res) => {
     res.render("login")

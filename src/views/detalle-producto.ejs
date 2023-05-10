@@ -6,23 +6,22 @@
 <body>
     <header>
         <%- include('./partials/header') %>
-    </header>
-    
+    </header>    
        
     <main class="main-pad">
         <section class="home-pad detalle-prod-grid">
             <div class="detalle-left">  
                 <div>
-                    <img src="images/vinos/mara pinot.png" alt="">
+                    <img src="../images/vinos/<%= producto.imagen %>" alt="">
                 </div>
             </div>
             <div class="detalle-right">                
-                <div class="detalle-titulo"> Mara Pinot Noir</div>
-                <div class="detalle-precio">$3000</div>
-                <div class="detalle-varios"> Bodega: Mara</div>
-                <div class="detalle-varios"> Año: 2020</div>
-                <div class="detalle-varios">Varietal: Pinot Noir</div>
-                <div class="detalle-varios">Región: Mendoza</div>
+                <div class="detalle-titulo"> <%= producto.nombre  %></div>
+                <div class="detalle-precio">$<%= producto.precio %></div>
+                <div class="detalle-varios"> Bodega: <%= producto.bodega %></div>
+                <div class="detalle-varios"> Año: <%= producto.año %></div>
+                <div class="detalle-varios">Varietal: <%= producto.varietal %></div>
+                <div class="detalle-varios">Región: <%= producto.region %></div>
                 <div class="descripcion-producto">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet doloremque, aperiam explicabo ex accusantium a architecto minus sit consectetur illum cumque quisquam magnam numquam reprehenderit dolorem nisi vero natus quibusdam!
                 </div>
