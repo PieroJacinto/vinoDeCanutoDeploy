@@ -40,7 +40,7 @@ module.exports = {
       var productosCategoria = productos.filter(item => item.categoria == categoria)
     }
     ;
-    res.render("lista-productos",{productosCategoria,categoria})
+    res.render("lista-productos",{productosCategoria})
   },
   detalleProducto: async (req,res) => {
     const idBuscado = req.params.id
