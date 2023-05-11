@@ -11,7 +11,7 @@
                         </div>
                         <div class="contenido-tarjeta">                                
                             <a href="/detalleProducto/<%= producto.id %>">
-                                <p><%= producto.nombre %></p>
+                                <p class="tarjeta-nombre"><%= producto.nombre %></p>
                                 <% if (producto.descuento > 0) { %>
                                     <div class="d-flex justify-content-center align-items-center">
                                         <div class="descuento  mrg-rg-1"> %<%= producto.descuento %> Off</div>

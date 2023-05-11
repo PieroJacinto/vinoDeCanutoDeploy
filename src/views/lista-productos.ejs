@@ -24,7 +24,7 @@
                         <a href="/detalleProducto/<%= producto.id %>">
                             <img src="../images/vinos/<%= producto.imagen %>" alt="" srcset="" class="tarjeta-imagen">                            
                             <div class="contenido-tarjeta">
-                                <p><%= producto.nombre %></p>
+                                <p class="tarjeta-nombre"><%= producto.nombre %></p>
                                 <% if (producto.descuento > 0) { %>
                                     <div class="d-flex justify-content-center align-items-center">
                                         <div class="descuento  mrg-rg-1"> %<%= producto.descuento %> Off</div>
