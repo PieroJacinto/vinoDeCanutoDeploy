@@ -13,13 +13,13 @@
             <!-- FILTROS -->
             <div class="filter-section">
                 <div class="categ-left-section">                  
-                    <%- include('./partials/filtros', { atributos, categoria }) %>
+                    <%- include('./partials/filtros', {atributos, categoria}) %>
                 </div>
             </div>        
 
             <!-- SECTION DONDE SE MUESTRAN LAS CARDS DE LOS PRODUCTOS -->
             <div class="tarjetas">    
-                <% productosCategoria.forEach(producto => { %>                 
+                <% productosFiltrados.forEach(producto => { %>                 
                     <div class="tarjeta">
                         <a href="/detalleProducto/<%= producto.id %>">
                             <img src="../images/vinos/<%= producto.imagen %>" alt="" srcset="" class="tarjeta-imagen">                            

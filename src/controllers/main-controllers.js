@@ -36,11 +36,29 @@ module.exports = {
       var productosCategoria = productos.filter(item => item.descuento > 0)
     } else if(categoria == "destacados") {
       var productosCategoria = productos.filter(item => item.destacados == true)
+    } else if(categoria == "todosLosProductos"){
+      var productosCategoria = productos
     } else {
-      var productosCategoria = productos.filter(item => item.categoria == categoria)
+      var productosCategoria = productos.filter(item => item.categoria.toLowerCase() == categoria.toLowerCase())   
     }
-    ;
-    res.render("lista-productos",{productosCategoria})
+    let atributos = {}  
+
+    const filtrosAAplicar = [
+      "varietal","variedad","bodega", "categoria", "año", "region"
+    ]
+    for (let i = 0; i < productos.length; i++) {
+      const producto = productos[i];
+      for(const atributo of Object.keys(producto)){
+        if(!(filtrosAAplicar.includes(atributo)))continue
+        if(!atributos[atributo])atributos[atributo] = {}
+        if (!(producto[atributo] in atributos[atributo]))atributos[atributo][producto[atributo]] = 1;
+        else atributos[atributo][producto[atributo]] += 1;
+      }  
+      
+    }
+    
+    
+    res.render("lista-productos",{productosCategoria, atributos, categoria})
   },
   detalleProducto: async (req,res) => {
     const idBuscado = req.params.id
@@ -57,6 +75,59 @@ module.exports = {
   },
   register: async (req,res) => {
     res.render("register")
+  },
+  productosFiltrados: async (req, res) => {
+    const filtros = req.body
+    const categoria = req.params.categoria
+    const productos = index()
+
+    let atributos = {}  
+
+    const filtrosAAplicar = [
+      "varietal","variedad","bodega", "categoria", "año", "region"
+    ]
+    for (let i = 0; i < productos.length; i++) {
+      const producto = productos[i];
+      for(const atributo of Object.keys(producto)){
+        if(!(filtrosAAplicar.includes(atributo)))continue
+        if(!atributos[atributo])atributos[atributo] = {}
+        if (!(producto[atributo] in atributos[atributo]))atributos[atributo][producto[atributo]] = 1;
+        else atributos[atributo][producto[atributo]] += 1;
+      }
+    }   
+    const tipoFiltros = {
+      "precioMinimo": "string",
+      "precioMaximo": "string",
+      "categoria": "object",
+      "varietal": "object",
+      "variedad": "object",
+      "año": "object",
+      "bodega": "object"
+    } 
+    function reestructurarFiltros(filtros){     
+      for (const filtro in filtros){
+        if(tipoFiltros[filtro] != typeof(filtros[filtro])){
+          filtros[filtro] = [filtros[filtro]]
+        }      
+    }
+  }
+  reestructurarFiltros(filtros)  
+
+  productosFiltrados = [];
+  for (let i = 0; i < productos.length; i++) {
+    const producto = productos[i];
+    const cumplePrecioMinimo = +producto.precio >= +filtros.precioMinimo;
+    const cumplePrecioMaximo = +producto.precio <= +filtros.precioMaximo;
+    const cumpleCategorias = !filtros.categoria || filtros.categoria.includes(producto.categoria);
+    const cumpleVarietal = !filtros.varietal || filtros.varietal.includes(producto.varietal);
+    const cumpleVariedad = !filtros.variedad || filtros.variedad.includes(producto.variedad);
+    const cumpleAnio = !filtros.año || filtros.año.includes(producto.año);
+    const cumpleBodega = !filtros.bodega || filtros.bodega.includes(producto.bodega);
+    const cumpleFiltros = cumpleCategorias && cumplePrecioMaximo && cumplePrecioMinimo && cumpleVarietal && cumpleVariedad && cumpleAnio && cumpleBodega;
+    if(cumpleFiltros)productosFiltrados.push(producto)
+  }  
+  
+  res.render("productos-filtrados",{productosFiltrados, categoria, atributos})    
   }
 }
   
