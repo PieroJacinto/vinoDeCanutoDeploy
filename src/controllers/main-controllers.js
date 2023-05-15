@@ -168,8 +168,9 @@ module.exports = {
     }    
     return res.redirect("/")
   },
-  carrito: async (req,res) => {   
-    res.render("carrito-de-compras")
+  carrito: async (req,res) => { 
+    let productoCarro = req.session.cart      
+    res.render("carrito-de-compras", {productoCarro})
   }
 }
   

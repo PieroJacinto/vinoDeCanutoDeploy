@@ -43,7 +43,7 @@
               
         </section>
         <section class="home-pad">
-            <% cart.forEach(producto => { %> 
+            <% productoCarro.forEach(producto => { %> 
                 <div class="carrito-container">
                     <div class="carrito-item">
                         <h2><%= producto.nombre %> <span class="price">$<%= parseInt(producto.precio) * producto.quantity %></span></h2>
