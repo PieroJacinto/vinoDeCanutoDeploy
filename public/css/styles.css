@@ -809,6 +809,8 @@ input[type="range"]::-moz-range-thumb{
     justify-content: center;
     border-bottom: solid 3px #FFA17B;
     border-top: solid 3px #FFA17B;
+    border-left: none;
+    border-right: none;
 }
 .sumar-restar-boton{
     background: #FFA17B;
@@ -1011,4 +1013,8 @@ ul {
   background-color: #f8d7da;
   text-align: center;
   border-radius: 10px;
+}
+/* CARRITO DE COMPRAS */
+.carrito-container{
+    display: flex;
 }

@@ -24,3 +24,5 @@ router.get("/register", mainControllers.register);
 router.get("/detalleProducto/:id", mainControllers.detalleProducto);
 router.get("/listaProductos/:categoria", mainControllers.listaProductos);
 router.post("/listaProductos/productosFiltrados", mainControllers.productosFiltrados);
+router.post('/carrito/agregar',mainControllers.agregarCarrito)
+router.get("/carrito",mainControllers.carrito)

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head') %> 
+</head>
+<body>
+    <header>
+        <%- include('./partials/header') %>
+    </header>
+    <main class="main-pad ">
+        <section class="home-pad">
+            <h1>carrito</h1>
+            <hr>
+            <!-- <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Imagen</th>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col">Precio</th>                    
+                  </tr>
+                </thead>
+                <tbody>
+                    <% if (cart.length >= 1) { %>                     
+                        <% for( let i = 0; i < cart.length; i++ ) { %>                     
+                           <% const producto = cart[i] %> 
+                            <tr>
+                                <th scope="row"><%= i + 1 %></th>
+                                <td><img class="img-carrito" src="../images/vinos/<%= producto.imagen %>" ></td>
+                                <td><%= producto.nombre %></td>
+                                <td><%= producto.quantity %></td>
+                                <td><%= parseInt(producto.precio) * producto.quantity %></td>                    
+                            </tr>
+                        <% } %>
+                    <% } else { %>
+                        <td colspan="4">no hay productos</td>
+                    <% } %>
+                </tbody>
+              </table> -->
+                       
+           
+              
+        </section>
+        <section class="home-pad">
+            <% cart.forEach(producto => { %> 
+                <div class="carrito-container">
+                    <div class="carrito-item">
+                        <h2><%= producto.nombre %> <span class="price">$<%= parseInt(producto.precio) * producto.quantity %></span></h2>
+                        <form action="/cart/update" method="post" class="update">
+                            <input type="hidden" name="id" value="<%= producto.id %>" />
+                            <input type="number" name="quantity" value="<%= producto.quantity %>" id="quantity">
+                            <button type="submit">
+                                <i class="fa-solid fa-sync"></i>
+                            </button>
+                        </form>
+                        <form action="/cart/delete" method="post" class="delete">
+                            <input type="hidden" name="id" value="<%= producto.id %>" />
+                            <button type="submit">
+                                <i class="fa-solid fa-times"></i>
+                            </button>
+                        </form>
+
+                    </div>
+
+                </div>
+                 
+            <% }) %>
+        </section>
+
+    </main>
+</body>
+</html>
+
+
