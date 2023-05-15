@@ -149,13 +149,14 @@ module.exports = {
   res.render("productos-filtrados",{productosFiltrados, categoria, atributos})    
   },
   agregarCarrito : async (req,res) => {
-    //encontramos el producto en la base de datos y la cantidad que agrego el usuario   
+    //encontramos el producto en la base de datos y la cantidad que agrego el usuario    
+     
     let product = one(req.body.id);
     let cantidad = req.body.cantidad
     // Comprobamos si el producto existe en el carrito
-    if (res.locals.cart.find(item => item.id == product.id)){
+    if (req.session.cart.find(item => item.id == product.id)){
         // Caso 1: existe y actualizamos cantidad
-        res.locals.cart = res.locals.cart.map(item => {
+        req.session.cart = req.session.cart.map(item => {
             if (item.id == product.id) {
                 item.quantity = item.quantity + cantidad
             }
@@ -163,7 +164,7 @@ module.exports = {
         })
     }else {
         // Caso 2:agregamops el carrito y seteamos la cantidad
-        res.locals.cart.push({...product, quantity:cantidad})
+        req.session.cart.push({...product, quantity:cantidad})
     }    
     return res.redirect("/")
   },
