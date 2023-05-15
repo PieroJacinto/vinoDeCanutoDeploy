@@ -30,6 +30,7 @@ app.use(session({
     resave: true,
     saveUninitialized: true,
     secret: 'secret',
+    proxy: true,    
 }));
 
 //REQUERIMOS Y EJECUTAMOS MIDDLEWARE DE CARRITO DE COMPRAS
