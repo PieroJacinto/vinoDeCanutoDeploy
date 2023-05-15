@@ -116,12 +116,12 @@ module.exports = {
   productosFiltrados = [];
   for (let i = 0; i < productos.length; i++) {
     const producto = productos[i];
-    const cumplePrecioMinimo = +producto.precio >= +filtros.precioMinimo;
-    const cumplePrecioMaximo = +producto.precio <= +filtros.precioMaximo;
+    const cumplePrecioMinimo = !filtros.precioMinimo || +producto.precio >= +filtros.precioMinimo;
+    const cumplePrecioMaximo = !filtros.precioMaximo || +producto.precio <= +filtros.precioMaximo;
     const cumpleCategorias = !filtros.categoria || filtros.categoria.includes(producto.categoria);
     const cumpleVarietal = !filtros.varietal || filtros.varietal.includes(producto.varietal);
     const cumpleVariedad = !filtros.variedad || filtros.variedad.includes(producto.variedad);
-    const cumpleAnio = !filtros.año || filtros.año.includes(producto.año);
+    const cumpleAnio = !filtros.año || filtros.año.includes(producto.año.toString());
     const cumpleBodega = !filtros.bodega || filtros.bodega.includes(producto.bodega);
     const cumpleFiltros = cumpleCategorias && cumplePrecioMaximo && cumplePrecioMinimo && cumpleVarietal && cumpleVariedad && cumpleAnio && cumpleBodega;
     if(cumpleFiltros)productosFiltrados.push(producto)
