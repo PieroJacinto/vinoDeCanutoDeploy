@@ -10,38 +10,7 @@
     <main class="main-pad ">
         <section class="home-pad">
             <h1>carrito</h1>
-            <hr>
-            <%= JSON.stringify(productoCarro,null,4) %>
-            <!-- <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Imagen</th>
-                    <th scope="col">Producto</th>
-                    <th scope="col">Cantidad</th>
-                    <th scope="col">Precio</th>                    
-                  </tr>
-                </thead>
-                <tbody>
-                    <% if (cart.length >= 1) { %>                     
-                        <% for( let i = 0; i < cart.length; i++ ) { %>                     
-                           <% const producto = cart[i] %> 
-                            <tr>
-                                <th scope="row"><%= i + 1 %></th>
-                                <td><img class="img-carrito" src="../images/vinos/<%= producto.imagen %>" ></td>
-                                <td><%= producto.nombre %></td>
-                                <td><%= producto.quantity %></td>
-                                <td><%= parseInt(producto.precio) * producto.quantity %></td>                    
-                            </tr>
-                        <% } %>
-                    <% } else { %>
-                        <td colspan="4">no hay productos</td>
-                    <% } %>
-                </tbody>
-              </table> -->
-                       
-           
-              
+            <hr>          
         </section>
         <h2>carrito prueba</h2>
         <section class="home-pad">
