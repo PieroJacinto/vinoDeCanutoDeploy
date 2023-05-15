@@ -1,7 +1,4 @@
-module.exports = (req,res, next) => {
-    if(req.session && !req.session.cart) {
-        req.session.cart = [];
-    }
-    res.locals.cart = req.session.cart
+module.exports = (req,res, next) => {    
+    res.locals.cart = []
     next();
 }
