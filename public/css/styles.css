@@ -1041,3 +1041,8 @@ ul {
     max-width: 4rem;
     border: #FFA17B solid
 }
+/* NOSOTROS */
+.nosotros{
+    max-width: 1000px;
+    text-align: center;    
+}
