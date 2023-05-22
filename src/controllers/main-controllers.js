@@ -166,10 +166,13 @@ module.exports = {
         // Caso 2:agregamops el carrito y seteamos la cantidad
         req.session.cart.push({...product, quantity:cantidad})
     }    
+    
+    // console.log(req.session.cart);
     return res.redirect("/")
   },
   carrito: async (req,res) => { 
-    let productoCarro = req.session.cart      
+    let productoCarro = res.locals.cart 
+    console.log(productoCarro);     
     res.render("carrito-de-compras", {productoCarro})
   },
   actualizarCarrito: async (req,res) => {
