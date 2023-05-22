@@ -1042,7 +1042,11 @@ ul {
     border: #FFA17B solid
 }
 /* NOSOTROS */
-.nosotros{
+.nosotros{    
     max-width: 1000px;
     text-align: center;    
+}
+.mapa{       
+    width:100%;
+    height: 25rem;    
 }
