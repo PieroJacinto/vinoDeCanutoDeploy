@@ -1021,8 +1021,7 @@ ul {
 }
 .total{
     display: flex;
-    justify-content: end;
-    margin-right: 13.8rem;
+    justify-content: end;    
     font-weight: 600;
     font-size: 18px;
 }
