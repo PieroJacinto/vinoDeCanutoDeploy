@@ -172,7 +172,7 @@ module.exports = {
   },
   carrito: async (req,res) => { 
     let productoCarro = req.session.cart 
-    console.log(productoCarro);     
+    // console.log(productoCarro);     
     res.render("carrito-de-compras", {productoCarro})
   },
   actualizarCarrito: async (req,res) => {
@@ -194,6 +194,9 @@ module.exports = {
   eliminarCarrito: async (req,res) => {
     req.session.cart = req.session.cart.filter(item => item.id != req.body.id)
         return res.redirect("/carrito")
+  },
+  nosotrxs: async (req,res) => {
+    res.render("nosotros")
   }
 }
   
