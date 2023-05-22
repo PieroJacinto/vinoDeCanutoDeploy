@@ -1015,6 +1015,39 @@ ul {
   border-radius: 10px;
 }
 /* CARRITO DE COMPRAS */
-.carrito-container{
+.carrito-container {
+    
+    padding: 10px;
+    background-color: #FFDFBB;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+.carrito-item{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.imagen-carrito{
+    max-height: 150px;
+    aspect-ratio: 3/4;
+    object-fit: contain;
+}
+.container-imagen-carrito{
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+.carrito-nombre{
+    font-weight: 500;
+    font-size: 20px;
+}
+.price{
+    font-size: 20px;
+    font-weight: 500;
+}
+.total{
+    display: flex;
+    justify-content: end;
+    margin-right: 13.8rem;
 }

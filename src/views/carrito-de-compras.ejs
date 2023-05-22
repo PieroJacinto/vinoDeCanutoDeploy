@@ -11,34 +11,51 @@
         <section class="home-pad">
             <h1>carrito</h1>
             <hr>          
-        </section>
-        <h2>carrito prueba</h2>
+        </section>       
         <section class="home-pad">
-            <% productoCarro.forEach(producto => { %> 
-                <div class="carrito-container">
-                    <div class="carrito-item">
-                        <h2><%= producto.nombre %> <span class="price">$<%= parseInt(producto.precio) * producto.quantity %></span></h2>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Cantidad</th>                    
+                    <th scope="col">Subtotal</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <% var total = 0 %>
+                <% productoCarro.forEach(producto => { %>
+                    <% total = total + (producto.precio * producto.quantity)%> 
+                <tbody>
+                    <tr>
+                    <th scope="row"><%= producto.nombre %></th>
+                    <td>$<%= parseInt(producto.precio)%></td>                    
+                    <td>
                         <form action="/cart/update" method="post" class="update">
                             <input type="hidden" name="id" value="<%= producto.id %>" />
-                            <input type="number" name="quantity" value="<%= producto.quantity %>" id="quantity">
+                            <input type="number" name="quantity" value="<%= producto.quantity %>" id="quantity" class="text-center">
                             <button type="submit">
                                 <i class="fa-solid fa-sync"></i>
                             </button>
                         </form>
+                    </td>
+                    <td>$<%= parseInt(producto.precio) * producto.quantity %></td>
+                    <td> 
                         <form action="/cart/delete" method="post" class="delete">
-                            <input type="hidden" name="id" value="<%= producto.id %>" />
-                            <button type="submit">
+                            <input type="hidden" name="id" value="<%= producto.id %>" />                            
+                            <button type="submit">                                
                                 <i class="fa-solid fa-times"></i>
                             </button>
                         </form>
-
-                    </div>
-
-                </div>
-                 
-            <% }) %>
+                    </td>
+                    </tr>                     
+                </tbody>
+                <% }) %>
+            </table>              
+            <div class="total">
+                total= $<%= total %>
+            </div>
         </section>
-
     </main>
 </body>
 </html>
