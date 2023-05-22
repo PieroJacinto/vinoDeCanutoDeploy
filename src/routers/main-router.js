@@ -26,3 +26,5 @@ router.get("/listaProductos/:categoria", mainControllers.listaProductos);
 router.post("/listaProductos/productosFiltrados", mainControllers.productosFiltrados);
 router.post('/carrito/agregar',mainControllers.agregarCarrito)
 router.get("/carrito",mainControllers.carrito)
+router.post('/carrito/actualizar',mainControllers.actualizarCarrito)
+router.post('/carrito/eliminar',mainControllers.eliminarCarrito)

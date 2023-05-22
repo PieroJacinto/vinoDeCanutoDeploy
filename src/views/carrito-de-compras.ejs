@@ -31,7 +31,7 @@
                     <th scope="row"><%= producto.nombre %></th>
                     <td>$<%= parseInt(producto.precio)%></td>                    
                     <td>
-                        <form action="/cart/update" method="post" class="update">
+                        <form action="/carrito/actualizar" method="post" class="update">
                             <input type="hidden" name="id" value="<%= producto.id %>" />
                             <input type="number" name="quantity" value="<%= producto.quantity %>" id="quantity" class="text-center">
                             <button type="submit">
@@ -41,7 +41,7 @@
                     </td>
                     <td>$<%= parseInt(producto.precio) * producto.quantity %></td>
                     <td> 
-                        <form action="/cart/delete" method="post" class="delete">
+                        <form action="/carrito/eliminar" method="post" class="delete">
                             <input type="hidden" name="id" value="<%= producto.id %>" />                            
                             <button type="submit">                                
                                 <i class="fa-solid fa-times"></i>

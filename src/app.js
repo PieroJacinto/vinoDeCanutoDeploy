@@ -32,7 +32,7 @@ app.use(session({
     secret: 'secret',
     proxy: true,    
 }));
-
+app.set("trust proxy", 1);
 //REQUERIMOS Y EJECUTAMOS MIDDLEWARE DE CARRITO DE COMPRAS
 app.use(require("./middlewares/carrito"))
 app.enable('trust proxy')

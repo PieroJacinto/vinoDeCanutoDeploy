@@ -171,6 +171,26 @@ module.exports = {
   carrito: async (req,res) => { 
     let productoCarro = req.session.cart      
     res.render("carrito-de-compras", {productoCarro})
+  },
+  actualizarCarrito: async (req,res) => {
+    // Checueamos cantidad
+    if(req.body.quantity == 0){
+      // Caso 1: si es igual a cero, eliminamos el producto
+      req.session.cart = req.session.cart.filter(item => item.id != req.body.id)
+    }else {
+        // Caso 2: actualizamos todos los itemes del carrito seteando la catidad en el producto seleccionado
+        req.session.cart = req.session.cart.map(item => {
+            if (item.id == req.body.id) {
+                item.quantity = req.body.quantity
+            }
+            return item
+        })
+    }
+    return res.redirect("/carrito")
+  },
+  eliminarCarrito: async (req,res) => {
+    req.session.cart = req.session.cart.filter(item => item.id != req.body.id)
+        return res.redirect("/carrito")
   }
 }
   
