@@ -25,11 +25,19 @@
                     </div>                                    
                 <% } else { %>
                     <p class="detalle-precio">$<%= producto.precio %></p>
-                <% } %>                
-                <div class="detalle-varios"> Bodega: <%= producto.bodega %></div>
-                <div class="detalle-varios"> Año: <%= producto.año %></div>
-                <div class="detalle-varios">Varietal: <%= producto.varietal %></div>
-                <div class="detalle-varios">Región: <%= producto.region %></div>
+                <% } %>
+                <% if (producto.bodega != null) { %>
+                    <div class="detalle-varios"> Bodega: <%= producto.bodega %></div>                 
+                <% } %>     
+                <% if (producto.año != null) { %>
+                    <div class="detalle-varios"> Año: <%= producto.año %></div>                 
+                <% } %>           
+                <% if (producto.varietal != null) { %>
+                    <div class="detalle-varios">Varietal: <%= producto.varietal %></div>                 
+                <% } %>
+                <% if (producto.region != null) { %>
+                    <div class="detalle-varios">Región: <%= producto.region %></div>                 
+                <% } %>
                 <div class="descripcion-producto">
                     <%= producto.descripcion %>
                 </div>

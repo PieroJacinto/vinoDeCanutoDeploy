@@ -22,16 +22,18 @@
     <% for (const [atributo, filtros] of Object.entries(atributos)){ %>  
         <% if (atributo == "categoria" && categoria != "todosLosProductos") continue %>            
         <% if (atributo == "varietal" && categoria != "vinos") continue %> 
-        <% if (atributo == "variedad" && categoria != "vinos") continue %> 
+        <% if (atributo == "variedad" && categoria != "vinos") continue %>        
         <hr style="margin-top: 1.75rem;">
         <h5 class="filtro-subtitulo"><%= atributo.substring(0,1).toUpperCase()+ atributo.substring(1).toLowerCase() %></h5>
-        <% for (const [filtro, cantidad] of Object.entries(filtros)){ %>                                    
+        <% for (const [filtro, cantidad] of Object.entries(filtros)){ %> 
+          <% if (filtro != "null") { %>
             <div class="form-check">
                 <input name="<%= atributo %>" class="form-check-input" type="checkbox" value="<%= filtro %>" id="flexCheckDefault">
                 <label class="form-check-label" for="flexCheckDefault">
                     <%= filtro %> (<%= cantidad %>)
                 </label>
-            </div>
+            </div>           
+          <% } %>                                   
         <% } %>
     <% } %>        
     

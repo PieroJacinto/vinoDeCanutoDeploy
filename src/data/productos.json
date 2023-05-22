@@ -253,5 +253,36 @@
         "precio": 2800,
         "descripcion": "Traslapiedra Malbec es un vino jóven, sin paso por madera, cuyas uvas provienen de pequeñas fincas ubicadas en los suelos pedregosos de Paraje Altamira. En boca es fresco, fácil de tomar, con buena textura y presencia de fruta roja y de hierbas representativas del lugar.",
         "imagen": "traslapiedra.png"    
+    },
+    {
+        "id": 18,
+        "nombre": "Aperitivo Vermouth La Fuerza Rojo",
+        "bodega": "La Fuerza",
+        "varietal": "Malbec",
+        "variedad": null,
+        "año": null,
+        "region": "Mendoza",
+        "categoria": "Vermouth",  
+        "descuento": 0,
+        "destacados": false, 
+        "precio": 3500,
+        "descripcion": "La Fuerza es un vermú elaborado con vinos y hierbas de los Andes. Lo pensamos, lo hacemos y lo embotellamos en Mendoza. Una bebida sin conservantes ni aromatizantes, solo se agrega mosto natural de uva. Con la fuerza de la naturaleza. La Fuerza Rojo obtuvo una medalla de plata en el International Wine & Spirits Competition (IWSC). Qué es: un vermú a base de vino Malbec de Mendoza. Cómo se hace: con hierbas que le dan notas florales, especiadas y un amargor leve. La artemisia mendozana, la jarilla y la carqueja, recolectadas al pie de los Andes son el corazón de su carácter. Graduación alcohólica: 17,5%. Cómo se bebe: es un vermú pensado para tomar solo con hielo, o sumarle soda y una rodaja de naranja. También se utiliza para preparar cócteles, como La Fuerza Julep, o La Fuerza Negroni.",
+        "imagen": "lafuerza-rojo.png"    
+    },
+    {
+        "id": 19,
+        "nombre": "Aperitivo Vermouth Cinzano Rosso",
+        "bodega": null,
+        "varietal": null,
+        "variedad": null,
+        "año": null,
+        "region": null,
+        "categoria": "Vermouth",  
+        "descuento": 0,
+        "destacados": false, 
+        "precio": 1100,
+        "descripcion": "La historia de Cinzano comenzó en 1757. Desde finales del siglo XIX comienza a comercializarse en todo el mundo. Desde 1999 es parte del Grupo Campari. Vermouth Rosso clásico mundialmente reconocido. Para su elaboración se combinan vinos, hierbas, especias y otros ingredientes naturales de todo el mundo especialmente seleccionados. Tiene 15 grados AVB de alcohol. Celebre participante en iconos de la cocteleria mundial en tragos como el Negroni y Manhattan.",
+        "imagen": "cinzano-rosso.png"    
     }
+    
 ]
