@@ -12,8 +12,12 @@
         <section class="section-filter-prod home-pad">
             <!-- FILTROS -->
             <div class="filter-section">
-                <div class="categ-left-section">                  
-                    <%- include('./partials/filtros', {atributos, categoria}) %>
+                <div class="categ-left-section">  
+                    <% if (locals.oldData) { %>
+                        <%- include('./partials/filtros', {atributos, categoria, oldData }) %>                     
+                    <% } else { %> 
+                        <%- include('./partials/filtros', {atributos, categoria}) %>
+                    <% } %>
                 </div>
             </div>        
 

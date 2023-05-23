@@ -4,11 +4,11 @@
     <h5 class="filtro-subtitulo">Precio</h5>                
     <!-- FILTROS DE PRECIO -->
     <div class="price-input">
-      <div class="field price-mg d-flex">                           
-        <input name="precioMinimo" type="number" class="input-min" value="" placeholder="Min">
+      <div class="field price-mg d-flex">                             
+        <input name="precioMinimo" type="number" class="input-min" value="<%=locals.oldData  && locals.oldData[0].precioMinimo ? locals.oldData[0].precioMinimo : null%>" placeholder="Min">
       </div>                          
       <div class="field">                            
-        <input name="precioMaximo" type="number" class="input-max" value="" placeholder="Max">
+        <input name="precioMaximo" type="number" class="input-max" value="<%= locals.oldData  && locals.oldData[0].precioMaximo ? locals.oldData[0].precioMaximo : null%>" placeholder="Max">
       </div>
     </div>
     <div class="slider">
@@ -21,14 +21,23 @@
 
     <% for (const [atributo, filtros] of Object.entries(atributos)){ %>  
         <% if (atributo == "categoria" && categoria != "todosLosProductos") continue %>            
-        <% if (atributo == "varietal" && categoria != "vinos") continue %> 
-        <% if (atributo == "variedad" && categoria != "vinos") continue %>        
+               
         <hr style="margin-top: 1.75rem;">
         <h5 class="filtro-subtitulo"><%= atributo.substring(0,1).toUpperCase()+ atributo.substring(1).toLowerCase() %></h5>
         <% for (const [filtro, cantidad] of Object.entries(filtros)){ %> 
-          <% if (filtro != "null") { %>
+          <% if (filtro != "null") { %>                    
             <div class="form-check">
-                <input name="<%= atributo %>" class="form-check-input" type="checkbox" value="<%= filtro %>" id="flexCheckDefault">
+                <input name="<%= atributo %>" class="form-check-input" type="checkbox" value="<%= filtro %>" id="flexCheckDefault"
+                <% if (locals.oldData) { %>
+                  <% var oldFiltro2 = [] %>
+                  <% for (const [oldAtributo, oldFiltros] of Object.entries(locals.oldData[0])){ %> 
+                    <% oldFiltros != "" ? oldFiltro2.push(oldFiltros) : "" %>                    
+                  <% } %>                   
+                  <% oldFiltro2.forEach(element => {  %>
+                    <%= element.includes(filtro) ? "checked" : null %>
+                  <% }) %>                                       
+                <% } %>          
+                >
                 <label class="form-check-label" for="flexCheckDefault">
                     <%= filtro %> (<%= cantidad %>)
                 </label>
