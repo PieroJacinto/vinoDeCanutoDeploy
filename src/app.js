@@ -5,7 +5,7 @@ require("dotenv").config();
 const express = require("express");
 
 //REQUERIMOS SESSION
-const session = require('express-session');
+const session = require('cookie-session');
 
 //EJECUTAMOS EXPRESS
 const app = express();
