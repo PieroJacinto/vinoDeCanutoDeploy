@@ -25,11 +25,11 @@
                 </thead>
                 <% var total = 0 %>
                 <% productoCarro.forEach(producto => { %>
-                    <% total = total + (producto.precio * producto.quantity)%> 
+                    <% total = total + (Math. round(producto.precio - ((producto.precio * producto.descuento) / 100)) * producto.quantity)%> 
                 <tbody>
                     <tr>
                     <th scope="row"><%= producto.nombre %></th>
-                    <td>$<%= parseInt(producto.precio)%></td>                    
+                    <td>$<%= parseInt(Math. round(producto.precio - ((producto.precio * producto.descuento) / 100)))%></td>                    
                     <td>
                         <form action="/carrito/actualizar" method="post" class="update" id="actualizarCarrito">
                             <input type="hidden" name="id" value="<%= producto.id %>" />
@@ -39,7 +39,7 @@
                             </button>
                         </form>
                     </td>
-                    <td>$<%= parseInt(producto.precio) * producto.quantity %></td>
+                    <td>$<%= parseInt(Math. round(producto.precio - ((producto.precio * producto.descuento) / 100))) * producto.quantity %></td>
                     <td> 
                         <form action="/carrito/eliminar" method="post" class="delete" id="eliminarCarrito">
                             <input type="hidden" name="id" value="<%= producto.id %>" />                            

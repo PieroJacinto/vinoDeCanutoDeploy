@@ -283,6 +283,35 @@
         "precio": 1100,
         "descripcion": "La historia de Cinzano comenzó en 1757. Desde finales del siglo XIX comienza a comercializarse en todo el mundo. Desde 1999 es parte del Grupo Campari. Vermouth Rosso clásico mundialmente reconocido. Para su elaboración se combinan vinos, hierbas, especias y otros ingredientes naturales de todo el mundo especialmente seleccionados. Tiene 15 grados AVB de alcohol. Celebre participante en iconos de la cocteleria mundial en tragos como el Negroni y Manhattan.",
         "imagen": "cinzano-rosso.png"    
-    }
-    
+    },
+    {
+        "id": 20,
+        "nombre": "Mariflor Sauvignon Blanc",
+        "bodega": "Michel Rolland",
+        "varietal": "Sauvignon Blanc",
+        "variedad": "Blanco",
+        "año": 2021,
+        "region": "Mendoza",
+        "categoria": "Vinos",   
+        "descuento": 10,
+        "destacados": false,
+        "precio": 6250,
+        "descripcion": "Crianza: Cosecha manual en pequeñas cajas. Doble selección manual de racimos. Fermentación en pequeñas piletas de cemento (en forma de huevo).Fermentación maloláctica en barricas de roble francés nuevo. 6 meses con bastoneo sobre lías. Notas de cata: Color oro, brillante, límpido. Nariz con notas de almendra y avellana fresca, el arbusto, con una pizca de citronela y cáscara de cítrico. Boca redonda y fresca, de una linda amplitud que se despliega en una paleta aromática en la cual encontramos los aromas de la nariz. El final es largo, muy aromático y se entretiene sobre notas perfumadas en la persistencia.",   
+        "imagen": "mariflor sauvignon blanc.jpg"
+    },
+    {
+        "id": 21,
+        "nombre": "Manos Negras Chardonnay",
+        "bodega": "Manos Negras",
+        "varietal": "Chardonnay",
+        "variedad": "Blanco",
+        "año": 2020,
+        "region": "Mendoza",
+        "categoria": "Vinos",   
+        "descuento": 15,
+        "destacados": false,
+        "precio": 2800,
+        "descripcion": "Puntuación 90 James Suckling. Los verdaderos enólogos se ensucian las manos. Manos manchadas de vino. De eso se trata. Manos Negras, arremangarse, involucrarse, ensuciarse las manos, hacer vino. En la zona de los Arboles en Tunuyán por sus suelos y cercanía con la cordillera se encuentren reconocidos viñedos donde el chardonnay se expresa con gran frescura. Este chardonnay se presenta con un perfil aromático de frutos de carozo, recuerdos cítricos y notas de piña madura. En boca es fresco y equilibrado, de agradable paso por el paladar, un blanco para todos los días.",   
+        "imagen": "manos negras chardonnay.png"
+    }    
 ]
