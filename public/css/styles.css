@@ -520,8 +520,7 @@ a {
 }
 .descuento{
     color: #db4437;
-    font-size: 16px;
-    
+    font-size: 16px;    
 }
 /* tarjetas de lista de productos */
 .tarjeta-nombre {
@@ -580,8 +579,7 @@ a {
     color: white !important;
 }
 
-/* FORMULARIO PRECIO Y CATEGORIAS EM LISTA DE PRODUCTOS */
-  
+/* FORMULARIO PRECIO Y CATEGORIAS EM LISTA DE PRODUCTOS */  
 .categ-left-section{
         padding: 5%;
         border: 1px #dee2e6 solid;
@@ -608,8 +606,6 @@ a {
     margin-bottom: 1rem;
     font-weight: normal;
 }
-
-
 .price-input{
     width: 100%;
     display: flex;
