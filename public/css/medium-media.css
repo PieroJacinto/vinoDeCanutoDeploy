@@ -118,5 +118,18 @@
       border-top-right-radius: 7px; 
       margin: 0px;
    }
+   /* filtros */
+   .filtros-mobile{
+      display: none;
+   }
+   .filtros-desktop{
+      display: block;
+   }
+   .categ-left-section{
+      padding: 5%;
+      border: 1px #dee2e6 solid;
+      border-radius: 5px;
+      margin-top: 1rem;     
+   } 
   
 }

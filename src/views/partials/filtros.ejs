@@ -1,4 +1,67 @@
-<form class="" action="productosFiltrados" method="POST" enctype="form-data" id="form-filtros">
+<!-- filtros mobile -->
+<p class="text-center filtros-mobile">  
+  <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    <h5 class="filtro-icon-position "><img src="../images/icons/filter-6535.svg" alt="" class="filtro-icon"srcset=""></h5>           
+  </button>
+</p>
+<form class="filtros-mobile" action="productosFiltrados" method="POST" enctype="form-data" id="form-filtros">   
+<div class="collapse" id="collapseExample">
+  <div class="mobile-filter-section">        
+      <h5 class="filtro-subtitulo">Precio</h5>                
+      <!-- FILTROS DE PRECIO -->
+      <div class="price-input">
+        <div class="field price-mg d-flex">                             
+          <input name="precioMinimo" type="number" class="input-min" value="<%=locals.oldData  && locals.oldData[0].precioMinimo ? locals.oldData[0].precioMinimo : null%>" placeholder="Min">
+        </div>                          
+        <div class="field">                            
+          <input name="precioMaximo" type="number" class="input-max" value="<%= locals.oldData  && locals.oldData[0].precioMaximo ? locals.oldData[0].precioMaximo : null%>" placeholder="Max">
+        </div>
+      </div>
+      <div class="slider">
+        <div class="progress"></div>
+      </div>
+      <div class="range-input">
+        <input type="range" class="range-min" min="0" max="30000" value="7500" step="100">
+        <input type="range" class="range-max" min="0" max="30000" value="22500" step="100">
+      </div> 
+  
+      <% for (const [atributo, filtros] of Object.entries(atributos)){ %>  
+          <% if (atributo == "categoria" && categoria != "todosLosProductos") continue %>            
+                 
+          <hr style="margin-top: 1.75rem;">
+          <h5 class="filtro-subtitulo"><%= atributo.substring(0,1).toUpperCase()+ atributo.substring(1).toLowerCase() %></h5>
+          <% for (const [filtro, cantidad] of Object.entries(filtros)){ %> 
+            <% if (filtro != "null") { %>                    
+              <div class="form-check">
+                  <input name="<%= atributo %>" class="form-check-input" type="checkbox" value="<%= filtro %>" id="flexCheckDefault"
+                  <% if (locals.oldData) { %>
+                    <% var oldFiltro2 = [] %>
+                    <% for (const [oldAtributo, oldFiltros] of Object.entries(locals.oldData[0])){ %> 
+                      <% oldFiltros != "" ? oldFiltro2.push(oldFiltros) : "" %>                    
+                    <% } %>                   
+                    <% oldFiltro2.forEach(element => {  %>
+                      <%= element.includes(filtro) ? "checked" : null %>
+                    <% }) %>                                       
+                  <% } %>          
+                  >
+                  <label class="form-check-label" for="flexCheckDefault">
+                      <%= filtro %> (<%= cantidad %>)
+                  </label>
+              </div>           
+            <% } %>                                   
+          <% } %>
+      <% } %>        
+      
+      <!-- BOTON PARA ENVIAR EL FORMULARIO -->
+      <div class="mt-4 mb-4 d-flex justify-content-center">
+          <button class="boton-filtros" type="submit"> Aplicar filtos </button>
+      </div>                                                     
+  </form>
+  </div>
+</div>
+<!-- filtros desktop -->
+<form class="filtros-desktop" action="productosFiltrados" method="POST" enctype="form-data" id="form-filtros">
+    
     <h5 class="filtro-titulo">Filtros</h5> 
     <hr>       
     <h5 class="filtro-subtitulo">Precio</h5>                

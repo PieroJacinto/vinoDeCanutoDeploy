@@ -581,10 +581,7 @@ a {
 }
 
 /* FORMULARIO PRECIO Y CATEGORIAS EM LISTA DE PRODUCTOS */
-.categ-left-section{
-    padding: 5%;
-    border: 1px #dee2e6 solid;
-    border-radius: 5px;
+.categ-left-section{   
     margin-top: 1rem;     
 } 
 
@@ -1049,4 +1046,25 @@ ul {
 .mapa{       
     width:100%;
     height: 25rem;    
+}
+/* filtros display */
+.filtros-desktop{
+    display: none;
+}
+.filtro-icon{
+    width: 4rem;
+    text-align: center;
+}
+.mobile-filter-section{
+    padding: 5%;
+    border: 1px #dee2e6 solid;
+    border-radius: 5px;
+    margin-top: 1rem;
+} 
+.filter-icon{
+    width: 10%;         
+}
+.filtro-icon-position{
+    transform: rotate(90deg) !important;
+    font-family: 700;   
 }
