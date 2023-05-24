@@ -581,10 +581,10 @@ a {
 
 /* FORMULARIO PRECIO Y CATEGORIAS EM LISTA DE PRODUCTOS */  
 .categ-left-section{
-        padding: 5%;
-        border: 1px #dee2e6 solid;
-        border-radius: 5px; 
-        margin-top: 1rem;   
+    padding: 5%;
+    border: 1px #dee2e6 solid;
+    border-radius: 5px; 
+    margin-top: 1rem;   
 } 
 
 /* BOTON PARA ENVIAR FORMULARIO CON FILTROS */
