@@ -303,7 +303,7 @@
         "id": 21,
         "nombre": "Manos Negras Chardonnay",
         "bodega": "Manos Negras",
-        "varietal": "Chardonnay",
+        "varietal": null,
         "variedad": "Blanco",
         "año": 2020,
         "region": "Mendoza",
@@ -313,5 +313,21 @@
         "precio": 2800,
         "descripcion": "Puntuación 90 James Suckling. Los verdaderos enólogos se ensucian las manos. Manos manchadas de vino. De eso se trata. Manos Negras, arremangarse, involucrarse, ensuciarse las manos, hacer vino. En la zona de los Arboles en Tunuyán por sus suelos y cercanía con la cordillera se encuentren reconocidos viñedos donde el chardonnay se expresa con gran frescura. Este chardonnay se presenta con un perfil aromático de frutos de carozo, recuerdos cítricos y notas de piña madura. En boca es fresco y equilibrado, de agradable paso por el paladar, un blanco para todos los días.",   
         "imagen": "manos negras chardonnay.png"
-    }    
+    },
+    {
+        "id": 22,
+        "nombre": "Aperitivo Pineral",
+        "bodega": null,
+        "varietal": null,
+        "variedad": null,
+        "año": 2020,
+        "region": "Mendoza",
+        "categoria": "Vermouth",   
+        "descuento": 10,
+        "destacados": false,
+        "precio": 2200,
+        "descripcion": "Preparado a base de infusiones vegetales y caramelo de acuerdo a la formula tradicional de los  hermanos Pini. Elaborado con infusiones alcohólicas de hierbas aromáticas y cáscaras de frutas cítricas. Producto tradicional e histórico Argentino. Ideal tomarlo en shot frozen solo, o en vaso  trago largo con naranja o pomelo muy utilizado en coctelería.",   
+        "imagen": "pineral.png"
+    }
+
 ]
