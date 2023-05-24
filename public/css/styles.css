@@ -586,6 +586,12 @@ a {
     border-radius: 5px; 
     margin-top: 1rem;   
 } 
+.filtros-left-section{
+    padding: 5%;
+    border: 1px #dee2e6 solid;
+    border-radius: 5px; 
+    margin-top: 1rem;   
+} 
 
 /* BOTON PARA ENVIAR FORMULARIO CON FILTROS */
 .boton-filtros {
