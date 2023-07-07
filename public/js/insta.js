@@ -15,3 +15,4 @@ function moveGalery(e){
         feed.scrollLeft -= feed.offsetWidth
     }
 }
+
